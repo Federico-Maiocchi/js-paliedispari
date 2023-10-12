@@ -1,25 +1,48 @@
 // con un prompt chiedo all'utente di digitare una parola
-const paroleUtente = prompt('inserisci una parola');
-console.log(paroleUtente)
+const parola = prompt('inserisci una parola');
+console.log(parola)
 
 // inizializzo una variabile per la lunghezza della parola dell'utente
-lunghezzaParolaUtente = paroleUtente.length
+lunghezzaParolaUtente = parola.length
 
+// dichiariamo una variabile al di fuori del ciclo for,così da poterla usarla poi usare
+// nell'invocazione della fuction "isPalindrome"
 
+// i '' li usiamo per indicare che il contenuto interno verrà riempito dal ciclo for 
 let parolaInversa = ''
-// ciclo for per vedere e prendere la parola al contrario 
+
+// usiamo il ciclo for INVERSO per rendere una parola al contrario 
 for (let i = lunghezzaParolaUtente -1; i >= 0; i--) {
-    const char = paroleUtente[i]
+    const char = parola[i]
     console.log(char)
 
+    // += li usiamo che indicare che dovrà considerare tutti gli indici 
+    // nel momento in cui verrà stampato
     parolaInversa += char
 
 }
 
 console.log(parolaInversa)
 
+// creiamo una funzione apposita per fare il confronto della parola originale confir
+// quella inversa. Ci dovrà dare due risultati:
+// se le due parole coincidono verrà considerata vera (true)
+// altrimenti verrà considerata falsa (false)
+function isPalindrome(parola, parolaInverita){
 
+    if (parola === parolaInverita) {
+        return true 
+    } else {
+        return false
+    }
+}
 
+// invochiamo la funzione 'isPalindrome' per inziare il nostro controllo 
+if (isPalindrome(parola, parolaInversa)) {
+    console.log('è palindroma')    
+} else {
+    console.log('non è palindroma')
+}
 
 
 
