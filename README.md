@@ -1,9 +1,24 @@
 # Capire se la parola è palindroma
 
 - chiedere all' utente di digitare la parola
-    - la parola verrà associata ad una variabile
 
-- creare una function che ci permetta di capire se la parola è palindroma
+
+- inizializzo questa variabile per ricavare la lunghezza della parola
+
+- dichiariamo una variabile fuori dal ciclo for che utilizzeremo per  la futura function
+
+- usiamo un ciclo for per invertire la parola digitata dall'utente
+    - dichiariamo la variabile I =  alla lunghezza della parola e sottraioamo(-1) per avere come punto di partenza l'ultima lettera che sarà la prima
+    - la condizione è I >= 0 per comprire tutta la lunghezza della parola
+    - I-- è il decremento che ci serve per avere la parola al contrario
+    - recuperiamo la dichiarabile parolaInvera e sarà += char, ci permettera di stampare tutti glie elementi del ciclo
+
+- creiamo una funzione apposita per fare il confronto della parola originale confir
+    - quella inversa. Ci dovrà dare due risultati:
+        - SE le due parole coincidono verrà considerata vera (true)
+        - ALTRIMENTI verrà considerata falsa (false)
+
+- INVOCHIAMO la funzione 'isPalindrome' per inziare il nostro controllo 
 
 
 # Pari o Dispari
