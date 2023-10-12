@@ -14,34 +14,39 @@ const lunghezzaParolaUtente = parolaUtente.length;
 let arrayParolaUtente = parolaUtente.split('')
 console.log(arrayParolaUtente)
 
+
 // usiamo un array REVERSE per invertire l'ordine degli elementi
-let arrayReverseParolaUtente = arrayParolaUtente.reverse();
+let arrayReverseParolaUtente = arrayParolaUtente.reverse('');
 console.log(arrayReverseParolaUtente)
 
-function Ispalindrome(array, arrayReverse){
-    if (array = arrayReverse) {
+//convertiamo array reverse in una STRINGA 
+let parolaUtenteInvertita = arrayReverseParolaUtente.toString('');
+console.log('parola utente invertita',parolaUtenteInvertita)
+
+function Ispalindrome(parola, parolaInversa){
+
+    if (parola === parolaInversa) {
         return true 
     } else {
         return false
     }
 }
 
-if (Ispalindrome(arrayParolaUtente, arrayReverseParolaUtente)) {
+
+if (Ispalindrome(parolaUtente, parolaUtenteInvertita)) {
     console.log('è palindroma')    
 } else {
     console.log('non è palindroma')
 }
 
 
-// for ( let i = 0; i < lunghezzaParolaUtente; i++) {
-//     const char = parolaUtente.charAt(i)
-//     // console.log(char)
-
-// }
 
 
-// const array = [char]
-// console.log(array)
 
-// funzione per capire capire se la parola dell'utente è palindroma
-// ciao
+
+
+
+
+
+
+
