@@ -16,11 +16,11 @@ console.log(arrayParolaUtente)
 
 
 // usiamo un array REVERSE per invertire l'ordine degli elementi
-let arrayReverseParolaUtente = arrayParolaUtente.reverse('');
+let arrayReverseParolaUtente = arrayParolaUtente.reverse();
 console.log(arrayReverseParolaUtente)
 
 //convertiamo array reverse in una STRINGA 
-let parolaUtenteInvertita = arrayReverseParolaUtente.toString('');
+let parolaUtenteInvertita = arrayReverseParolaUtente.toString();
 console.log('parola utente invertita',parolaUtenteInvertita)
 
 function Ispalindrome(parola, parolaInversa){

@@ -4,3 +4,6 @@
     - la parola verrà associata ad una variabile
 
 - creare una function che ci permetta di capire se la parola è palindroma
+
+
+# Pari e Dispari
